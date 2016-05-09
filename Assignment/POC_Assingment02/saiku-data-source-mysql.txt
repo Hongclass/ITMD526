@@ -1,0 +1,2 @@
+URL: jdbc:mysql://localhost/datamart_application
+JDBC Driver: com.mysql.jdbc.Driver

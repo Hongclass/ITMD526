@@ -1,0 +1,7 @@
+SELECT
+    {[Measures].[Is Applied], [Measures].[Is Accepted]} ON COLUMNS,
+    {[Program Usage].[Department].members} ON ROWS 
+FROM
+    [Application Fact]
+WHERE
+    [Applicant Usage].[Citizenship Country].[India]

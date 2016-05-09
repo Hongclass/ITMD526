@@ -1,0 +1,5 @@
+EMPLOYEE_NUMBER, LASTNAME, FIRSTNAME, EXT, OFFICE, REPORTS, TITLE
+1188, Firrelli, Julianne,x2174,2,1143, Sales Manager
+1619, King, Tom,x103,6,1088,Sales Rep
+1810, Lundberg, Anna,x910,2,1143,Sales Rep
+1811, Schulz, Chris,x951,2,1143,Sales Rep

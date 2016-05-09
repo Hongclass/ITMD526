@@ -1,0 +1,4 @@
+CITY;PHONE;ADDRESS;COUNTRY;POSTALCODE
+Sao Paulo;11 3289-3703;Avenida Paulista 1330;Brazil;01310-200
+Sao Paulo;11 3104-1116;Rua Boa Vista, 51;Brazil;01014-001
+Buenos Aires;11 4582-6700;Cabildo 2127;Argentina;C1428AAT

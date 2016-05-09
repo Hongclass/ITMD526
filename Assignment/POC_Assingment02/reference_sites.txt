@@ -1,0 +1,6 @@
+Saiku Analytics 
+    Download: http://community.meteorite.bi/ --> Download Saiku CE
+Schema Workbench: 
+    Download: http://community.pentaho.com/
+    Demo: https://www.youtube.com/watch?v=Tqw3oOk5jsM&list=PLIS-R80eiu1snl5wW893-BLiE0yDVhQAe
+MDX: http://mondrian.pentaho.com/documentation/mdx.php

@@ -1,0 +1,40 @@
+<Schema name="New Schema1">
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Applicant">
+    <Hierarchy name="Geo" visible="true" hasAll="true" primaryKey="applicant_key">
+      <Table name="dim_applicant">
+      </Table>
+      <Level name="Citizenship Country" visible="true" column="country_of_citizenship" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" captionColumn="country_of_citizenship">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Gender" visible="true" hasAll="true" primaryKey="applicant_key">
+      <Table name="dim_applicant">
+      </Table>
+      <Level name="Gender" visible="true" column="gender" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" captionColumn="gender">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Program">
+    <Hierarchy name="Program" visible="true" hasAll="true" primaryKey="program_key">
+      <Table name="dim_program">
+      </Table>
+      <Level name="Department" visible="true" column="department_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" captionColumn="department_name">
+      </Level>
+      <Level name="Program" visible="true" column="program_name" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never" captionColumn="department_name">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Application Fact" visible="true" description="Application Fact Cube" cache="true" enabled="true">
+    <Table name="fact_application">
+    </Table>
+    <DimensionUsage source="Applicant" name="Applicant Usage" visible="true" foreignKey="applicant_key" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Program" name="Program Usage" visible="true" foreignKey="program_key" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Is Applied" column="applied" datatype="Integer" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Is Admitted" column="admitted" datatype="Integer" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Is Accepted" column="accepted" datatype="Integer" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
